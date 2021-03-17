@@ -1,23 +1,9 @@
-# CorpBot.py
-A *slightly* less clumsy python bot for discord
-
+# Discordbot.py
 ***
 
 # Basic Settings
 
-The bot's basic settings should be in a file called `settings_dict.json` in the same folder as the `Main.py` file.  Some basic formatting of this file would look like so:
-
-```json
-{
-    "prefix": "your_custom_prefix_here",
-    "token": "your_token_here",
-    "weather": "your_weather_api_key_here",
-    "currency": "your_currency_api_key_here"
-}
-```
-
-You'll want to replace the values with your own.  The `prefix` key can be omitted, and the bot will fallback on its default `$` prefix.
-
+Figure it out yourself. No help will be provided for self hosting as this bot is open source just for reference. 
 ***
 
 # Command List
