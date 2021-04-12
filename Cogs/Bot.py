@@ -58,7 +58,7 @@ class Bot(commands.Cog):
 				await self._update_status()
 			except Exception as e:
 				print(str(e))
-			await asyncio.sleep(3600) # runs only every 60 minutes (3600 seconds)
+			await asyncio.sleep(3600) # runs only every 60 minutes (3600 seconds = 60 minutes)
 
 	async def onserverjoin(self, server):
 		# Iterate the blocked list and see if we are blocked
