@@ -608,7 +608,7 @@ class Bot(commands.Cog):
 		Playing type options are:
 		
 		0. Playing (or None without game)
-		1. Streaming (requires valid twitch url)
+		1. Streaming (requires valid twitch url, example = https://twitch.com/aditya_tm)
 		2. Listening
 		3. Watching
 		
