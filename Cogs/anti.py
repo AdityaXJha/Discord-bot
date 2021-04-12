@@ -1,5 +1,4 @@
 import discord 
-import pymongo
 import os
 import asyncio
 import requests
@@ -721,5 +720,3 @@ async def unban(ctx, member_id = None):
         embed = discord.Embed(title='Universal', color=0xf14645, description=f'**`Successfully Unbanned {member_id}!`**')
         embed.set_thumbnail(url='https://botuniversal.com/favicon-premium.png')
         await ctx.send(embed=embed)
-
-client.run(token)
