@@ -43,7 +43,7 @@ class Reddit(commands.Cog):
 		if not type(posts) == int:
 			posts = 100
 		self.posts = posts
-		self.ua = 'CorpNewt DeepThoughtBot'
+		self.ua = 'Aditya DeepThoughtBot'
 		self.extList = ["jpg", "jpeg", "png", "gif", "tiff", "tif"]
 		self.headList = ["image/jpeg", "image/png", "image/gif", "image/jpg"]
 		global Utils, DisplayName

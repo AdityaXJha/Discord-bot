@@ -26,7 +26,7 @@ class Cats(commands.Cog):
 		if not type(posts) == int:
 			posts = 100
 		self.posts = posts
-		self.ua = 'CorpNewt DeepThoughtBot'
+		self.ua = 'Aditya DeepThoughtBot'
 			
 	def canDisplay(self, server):
 		# Check if we can display images

@@ -14,7 +14,7 @@ class Weather(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 		self.key = bot.settings_dict.get("weather","")
-		self.geo = Nominatim(user_agent="CorpBot")
+		self.geo = Nominatim(user_agent="AdityaBot")
 
 	def _get_output(self, w_text):
 		if "tornado" in w_text.lower():

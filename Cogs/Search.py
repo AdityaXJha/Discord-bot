@@ -116,7 +116,7 @@ class Search(commands.Cog):
 
 	@commands.command(pass_context=True)
 	async def searchsite(self, ctx, category_name = None, *, query = None):
-		"""Search corpnewt.com forums."""
+		"""Search Aditya.com forums."""
 
 		auth = self.site_auth
 
@@ -125,21 +125,21 @@ class Search(commands.Cog):
 			return
 
 		if query == None or category_name == None:
-			msg = "Usage: `{}searchsite [category] [search term]`\n\n Categories can be found at:\n\nhttps://corpnewt.com/".format(ctx.prefix)
+			msg = "Usage: `{}searchsite [category] [search term]`\n\n Categories can be found at:\n\nhttps://Aditya.com/".format(ctx.prefix)
 			await ctx.channel.send(msg)
 			return
 
-		categories_url = "https://corpnewt.com/api/categories"
+		categories_url = "https://Aditya.com/api/categories"
 		categories_json = await DL.async_json(categories_url, headers={'Authorization': auth})
 		categories = categories_json["categories"]
 
 		category = await self.find_category(categories, category_name)
 
 		if category == None:
-			await ctx.channel.send("Usage: `{}searchsite [category] [search term]`\n\n Categories can be found at:\n\nhttps://corpnewt.com/".format(ctx.prefix))
+			await ctx.channel.send("Usage: `{}searchsite [category] [search term]`\n\n Categories can be found at:\n\nhttps://Aditya.com/".format(ctx.prefix))
 			return
 
-		search_url = "https://corpnewt.com/api/search?term={}&in=titlesposts&categories[]={}&searchChildren=true&showAs=posts".format(query, category["cid"])
+		search_url = "https://Aditya.com/api/search?term={}&in=titlesposts&categories[]={}&searchChildren=true&showAs=posts".format(query, category["cid"])
 		search_json = await DL.async_json(search_url, headers={'Authorization': auth})
 		posts = search_json["posts"]
 		resultString = 'Results'
@@ -151,7 +151,7 @@ class Search(commands.Cog):
 		for post in posts:
 			if ctr < limit:
 				ctr = ctr + 1
-				result_string += '__{}__\n<https://corpnewt.com/topic/{}>\n\n'.format(post["topic"]["title"], post["topic"]["slug"])
+				result_string += '__{}__\n<https://Aditya.com/topic/{}>\n\n'.format(post["topic"]["title"], post["topic"]["slug"])
 			
 		await ctx.channel.send(result_string)
 

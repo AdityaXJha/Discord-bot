@@ -14,7 +14,7 @@ class Giphy(commands.Cog):
 	def __init__(self, bot, settings):
 		self.bot = bot
 		self.settings = settings
-		self.ua = 'CorpNewt DeepThoughtBot'
+		self.ua = 'Aditya DeepThoughtBot'
 		# Instantiate giphypop, but suppress the warning message
 		with warnings.catch_warnings():
 			warnings.simplefilter("ignore")

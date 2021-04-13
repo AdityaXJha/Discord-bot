@@ -36,7 +36,7 @@ def canDisplay( firstTime, threshold ):
 	else:
 		return False
 
-async def download(url, ext : str = "jpg", sizeLimit : int = 8000000, ua : str = 'CorpNewt DeepThoughtBot'):
+async def download(url, ext : str = "jpg", sizeLimit : int = 8000000, ua : str = 'Aditya DeepThoughtBot'):
 	"""Download the passed URL and return the file path."""
 	url = str(url).strip("<>")
 	# Set up a temp directory
@@ -97,7 +97,7 @@ def remove(path):
 	if not path == None and os.path.exists(path):
 		shutil.rmtree(os.path.dirname(path), ignore_errors=True)
 
-async def get(ctx, url, title = None, ua : str = 'CorpNewt DeepThoughtBot', **kwargs):
+async def get(ctx, url, title = None, ua : str = 'Aditya DeepThoughtBot', **kwargs):
 	"""Download passed image, and upload it to passed channel."""
 	downl = kwargs.get("download", False)
 	if not downl:

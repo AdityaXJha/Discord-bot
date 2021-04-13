@@ -22,7 +22,7 @@ class UrbanDict(commands.Cog):
 	def __init__(self, bot, settings):
 		self.bot = bot
 		self.settings = settings
-		self.ua = 'CorpNewt DeepThoughtBot'
+		self.ua = 'Aditya DeepThoughtBot'
 		self.random = True
 
 	@commands.command(pass_context=True)
