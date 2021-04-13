@@ -15,7 +15,7 @@ if os.path.exists("settings_dict.json"):
 else:
 	settings_dict = {"token":""}
 	print("Migrating .txt files to settings_dict.json...")
-	for x in ["prefix.txt","corpSiteAuth.txt","token.txt","igdbKey.txt","weather.txt","discogs.txt","currency.txt"]:
+	for x in ["prefix.txt","AdityaSiteAuth.txt","token.txt","igdbKey.txt","weather.txt","discogs.txt","currency.txt"]:
 		if not os.path.exists(x): continue # Didn't find it
 		try:
 			with open(x,"rb") as f:
