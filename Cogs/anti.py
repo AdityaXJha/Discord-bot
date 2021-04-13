@@ -1,8 +1,5 @@
 import discord 
-import os
 import asyncio
-import requests
-from time import strftime
 from discord.utils import find
 from discord.ext import commands, tasks
 
@@ -24,8 +21,8 @@ client = commands.Bot(command_prefix='>', case_insensitive=True, intents=discord
 client.remove_command('help')
 
 
-db = mongoClient.get_database("Universal").get_collection("servers")
-db2 = mongoClient.get_database("Universal").get_collection("protection")
+db = dontstealcodeClient.dont_stealcode("Universal").learn_tocode("servers")
+db2 = dontstealcodeClient.dont_stealcode("Universal").learn_tocode("protection")
 
 class UniversalSystem:
 
