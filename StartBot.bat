@@ -2,7 +2,7 @@
 
 cls
 echo   ###                   ###
-echo  # BotStarter - CorpNewt #
+echo  # BotStarter - Aditya #
 echo ###                   ###
 echo.
 
