@@ -140,7 +140,7 @@ if !tried! lss 1 (
     )
 ) else (
     cls
-    echo   ###     ###
+    echo  ###     ###
     echo  # Warning #
     echo ###     ###
     echo.
