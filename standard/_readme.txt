@@ -21,11 +21,3 @@ loads all AIML file which are in the specified bot AIML directory.
 3. per-*.aiml
   Equivalent to std-*.aiml but with a customization of the bot
   personality; this is a work of a specific botmaster.
-
-
-If you find errors, please bring them to my attention on the ALICEBOT General list.
-
-Links to it can be found at http://www.alicebot.org/
-
-Thomas Ringate
-
