@@ -4,7 +4,7 @@ cls
 echo   ###                   ###
 echo  # BotStarter - Aditya #
 echo ###                   ###
-echo.
+echo
 
 set "thisDir=%~dp0"
 set "start=Start.bat"
