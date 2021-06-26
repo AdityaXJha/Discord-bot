@@ -259,7 +259,7 @@ if not exist "%TEMP%\pyurl.txt" (
 
 echo Parsing for latest...
 pushd "%TEMP%"
-:: Version detection code slimmed by LussacZheng (https://github.com/Aditya/gibMacOS/issues/20)
+
 for /f "tokens=9 delims=< " %%x in ('findstr /i /c:"Latest Python !targetpy! Release" pyurl.txt') do ( set "release=%%x" )
 popd
 
